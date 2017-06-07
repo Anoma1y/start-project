@@ -7,3 +7,13 @@ template project (gulp)
 	3) gulp
 php
 	proxy: "domain"
+
+---
+---app
+------js
+------css
+------img
+------sass
+------fonts
+------index.html
+---dist
