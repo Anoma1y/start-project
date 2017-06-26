@@ -24,6 +24,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-uglifyjs": "^0.6.2",
-    "imagemin-pngquant": "^5.0.1"
+    "imagemin-pngquant": "^5.0.1",
+     "node-bourbon": "^4.2.8"
   }
 }
