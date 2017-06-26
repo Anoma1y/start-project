@@ -39,12 +39,15 @@ gulp.task('delete-dist', () => {
 
 gulp.task('libs', () => {
 	return gulp.src([
+		'./app/libs/modernizr/modernizr.js',
 		'./app/libs/jquery/jquery-1.11.2.min.js',
+		'./app/libs/animate/animate-css.js',
 	])
 	.pipe(concat('libs.min.js'))
 	.pipe(uglify())
 	.pipe(gulp.dest('./app/js/'));
 });
+
 
 gulp.task('image', () => {
 	return gulp.src('app/img/**/*') 
