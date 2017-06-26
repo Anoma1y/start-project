@@ -14,7 +14,9 @@ const browserSync 	= require('browser-sync');
 
 gulp.task('styles', () => {
 	return gulp.src('app/sass/*.+(sass|scss)')
-	.pipe(sass().on('error', sass.logError))
+	.pipe(sass({
+		includePaths: require('node-bourbon').includePaths
+	 }).on('error', sass.logError))
 	.pipe(rename({suffix: '.min', prefix : ''}))
 	.pipe(autoprefixer(['last 15 versions', 'ie 8', 'ie 7'], { cascade: true }))
 	.pipe(cleanCSS())
